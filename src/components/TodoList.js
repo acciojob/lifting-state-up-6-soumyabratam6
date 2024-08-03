@@ -1,5 +1,6 @@
 import React from "react";
 const TodoList = ({ todos, onComplete })=>{
+    console.log('Rendering TodoList with todos:', todos);
     return (
         <ul>
           {todos.map(todo => (
