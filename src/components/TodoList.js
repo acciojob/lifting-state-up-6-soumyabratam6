@@ -7,9 +7,9 @@ const TodoList = ({ todos, onComplete })=>{
               <span >
                 {todo.text}
               </span>
-              {!todo.completed ? (
-                <button onClick={() => onComplete(todo.id)}>Complete</button>
-              ) : null}
+              {!todo.completed && (
+            <button onClick={() => onComplete(todo.id)}>Complete</button>
+          )}
             </li>
           ))}
         </ul>
